@@ -1,0 +1,249 @@
+@font-face {
+  font-family: Oswald;
+  src: url(../Asset/font_family/Oswald/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(../Asset/font_family/Poppins/Poppins-Medium.ttf);
+}
+@media (max-width: 767px) {
+  .faceimgSmall {
+    height: 525px;
+  }
+  .cfs-1 {
+    font-size: 4rem !important;
+  }
+  .cfs-2 {
+    font-size: 3rem !important;
+  }
+  .cfs-3 {
+    font-size: 2rem !important;
+  }
+  .cfs-4 {
+    font-size: 1rem;
+  }
+  .cfs-5 {
+    font-size: 0.5rem !important;
+  }
+  .c-fixed {
+    position: fixed;
+    top: none;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: inherit;
+  }
+}
+@media (min-width: 576px) {
+  .c-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: none;
+    bottom: 0;
+    width: inherit;
+  }
+  .navhover i {
+    transition: 0.3s ease-in;
+  }
+  .navhover:hover i {
+    font-size: 3.5rem;
+  }
+}
+.ff-oswald {
+  font-family: Oswald;
+}
+.ff-poppins {
+  font-family: poppins;
+}
+/* Custom Font Size */
+.cfs-1 {
+  font-size: 5rem;
+}
+.cfs-2 {
+  font-size: 4rem;
+}
+.cfs-3 {
+  font-size: 3rem;
+}
+.cfs-4 {
+  font-size: 2rem;
+}
+.cfs-5 {
+  font-size: 1rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.navhover a {
+  padding: 3.5rem 0 3.5rem 0;
+}
+.navhover:hover a {
+  color: #5befff !important;
+  padding: 0;
+}
+
+#hero {
+  height: 800px;
+  background-image: url(../Asset/img/Hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#hero::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #0a1841 30%, rgba(0, 0, 0, 0));
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.faceimg {
+  background-image: url(../Asset/img/aboutimg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: contain;
+}
+#portfolio {
+  background-image: url(../Asset/img/Mountain.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.glass {
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.textborder {
+  margin-left: 25px;
+  padding-left: 20px;
+  border-left: 3px solid #000;
+  border-radius: 0 0 0 20px;
+}
+.weblogo {
+  height: 100px;
+  width: 100px;
+  margin: 1rem;
+}
+.modelimg {
+  /* height: 150px; */
+  width: 150px;
+  margin: 1rem;
+}
+.portfolio-option {
+  height: 500px;
+  width: 500px;
+  border-radius: 1.5rem;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 0, 1), rgba(255, 255, 0, 0.6));
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.portfolio-option-bg::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+.hover-portfolio {
+  text-decoration: none;
+}
+.hover-portfolio:hover i {
+  font-size: 3rem;
+}
+#award {
+  height: 800px;
+  background-image: url(../Asset/img/Background\ Purple.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.awardimgsize {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+.contactimg {
+  background-image: url(../Asset/img/contactimg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+footer {
+  color: #fff;
+  background-color: #0a1841;
+}
+textarea {
+  resize: inherit;
+}
+.input-group {
+  margin-top: 1rem;
+  position: relative;
+}
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px !important;
+  outline: none;
+}
+.input-group label {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  /* text-transform: uppercase; */
+  transition: 0.5s;
+}
+.input-group input:valid ~ label,
+.input-group input:focus ~ label,
+.input-group textarea:valid ~ label,
+.input-group textarea:focus ~ label {
+  font-size: 0.8rem;
+  padding: 0 10px;
+  background-color: #fff;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 3.5px !important;
+  transform: translate(0.8rem, -0.5rem);
+}
+.success-notif {
+  color: rgb(72, 72, 72);
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 350px;
+  height: auto;
+
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(103, 180, 245, 0.2),
+    rgba(103, 180, 245, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
