@@ -1,31 +1,8 @@
-@font-face {
-  font-family: Oswald;
-  src: url(../Asset/font_family/Oswald/Oswald-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: poppins;
-  src: url(../Asset/font_family/Poppins/Poppins-Medium.ttf);
-}
 @media (max-width: 767px) {
   .faceimgSmall {
     height: 525px;
   }
-  .cfs-1 {
-    font-size: 4rem !important;
-  }
-  .cfs-2 {
-    font-size: 3rem !important;
-  }
-  .cfs-3 {
-    font-size: 2rem !important;
-  }
-  .cfs-4 {
-    font-size: 1rem;
-  }
-  .cfs-5 {
-    font-size: 0.5rem !important;
-  }
-  .c-fixed {
+  .ResNav {
     position: fixed;
     top: none;
     left: 0;
@@ -35,7 +12,7 @@
   }
 }
 @media (min-width: 576px) {
-  .c-fixed {
+  .ResNav {
     position: fixed;
     top: 0;
     left: 0;
@@ -43,52 +20,37 @@
     bottom: 0;
     width: inherit;
   }
-  .navhover i {
-    transition: 0.3s ease-in;
+  .navicon {
+    font-size: 2rem !important;
   }
-  .navhover:hover i {
-    font-size: 3.5rem;
+  .nav-item i {
+    transition: 0.3s ease-in !important;
+  }
+  .nav-item:hover i {
+    font-size: 3.5rem !important;
   }
 }
-.ff-oswald {
-  font-family: Oswald;
-}
-.ff-poppins {
-  font-family: poppins;
-}
-/* Custom Font Size */
-.cfs-1 {
-  font-size: 5rem;
-}
-.cfs-2 {
-  font-size: 4rem;
-}
-.cfs-3 {
-  font-size: 3rem;
-}
-.cfs-4 {
-  font-size: 2rem;
-}
-.cfs-5 {
-  font-size: 1rem;
-}
+
 html {
   scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
 }
-.navhover a {
-  padding: 3.5rem 0 3.5rem 0;
+.navicon {
+  font-size: 3rem;
 }
-.navhover:hover a {
+.nav-item a {
+  padding: 3.5rem 0 3.5rem 0 !important;
+}
+.nav-item:hover a {
   color: #5befff !important;
   padding: 0;
 }
 
 #hero {
-  height: 800px;
-  background-image: url(../Asset/img/Hero.jpg);
+  height: 100vh;
+  background-image: url(../Asset/img/Hero.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -104,14 +66,14 @@ body {
   left: 0;
 }
 .faceimg {
-  background-image: url(../Asset/img/aboutimg.png);
+  background-image: url(../Asset/img/aboutimg.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   object-fit: contain;
 }
 #portfolio {
-  background-image: url(../Asset/img/Mountain.png);
+  background-image: url(../Asset/img/Mountain.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,7 +109,7 @@ body {
   width: 500px;
   border-radius: 1.5rem;
   color: white;
-  background: linear-gradient(rgba(255, 255, 0, 1), rgba(255, 255, 0, 0.6));
+  background: rgb(255, 255, 0);
   backdrop-filter: blur(10px);
   position: absolute;
   top: 50%;
@@ -172,7 +134,7 @@ body {
 }
 #award {
   height: 800px;
-  background-image: url(../Asset/img/Background\ Purple.jpg);
+  background-image: url(../Asset/img/Background\ Purple.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,10 +142,23 @@ body {
 .awardimgsize {
   display: block;
   width: 100%;
-  object-fit: contain;
+  object-fit: contain !important;
+}
+.awardimgrotate {
+  transform: rotate(90deg);
+}
+.btn {
+  transition: all 300ms ease-in-out;
+}
+.btn:hover,
+.btn:focus {
+  font-weight: 600;
+  color: #000 !important;
+  background-color: #fff;
+  border: 1px solid #000;
 }
 .contactimg {
-  background-image: url(../Asset/img/contactimg.png);
+  background-image: url(../Asset/img/contactimg.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

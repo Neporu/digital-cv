@@ -3,45 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
-      href="./CSS/bootstrap-icons-1.11.3/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="./CSS/fontfamily.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
-    <title>My CV Resume</title>
+    <title>Neporu's CV</title>
   </head>
   <body class="row g-0">
     <header class="z-1 col-0 col-sm-2 text-center">
-      <nav style="background-color: #08112d" class="c-fixed ff-poppins">
-        <ul class="h-100 nav flex-sm-column justify-content-evenly">
-          <li class="navhover">
+      <nav style="background-color: #08112d" class="ResNav">
+        <ul
+          class="h-100 nav flex-sm-column justify-content-evenly poppins-medium"
+        >
+          <li class="nav-item">
             <a class="text-white" href="#about">
-              <i class="cfs-4 bi bi-person-fill"></i><br />
+              <i class="navicon bi bi-person-fill"></i><br />
               <span class="d-none d-sm-inline-block"> ABOUT </span>
             </a>
           </li>
-          <li class="navhover">
+          <li class="nav-item">
             <a class="text-white" href="#edu-exp-ski">
-              <i class="cfs-4 bi-mortarboard-fill"></i><br />
+              <i class="navicon bi-mortarboard-fill"></i><br />
               <span class="d-none d-sm-inline-block"> EDU-EXP-SKI </span>
             </a>
           </li>
-          <li class="navhover">
+          <li class="nav-item">
             <a class="text-white" href="#portfolio">
-              <i class="cfs-4 bi-folder-fill"></i><br />
+              <i class="navicon bi-folder-fill"></i><br />
               <span class="d-none d-sm-inline-block"> MY PORTFOLIO </span>
             </a>
           </li>
-          <li class="navhover">
+          <li class="nav-item">
             <a class="text-white" href="#award">
-              <i class="cfs-4 bi-award-fill"></i><br />
+              <i class="navicon bi-award-fill"></i><br />
               <span class="d-none d-sm-inline-block"> CERTIFICATE </span>
             </a>
           </li>
-          <li class="navhover">
+          <li class="nav-item">
             <a class="text-white" href="#contact">
-              <i class="cfs-4 bi-send-fill"></i><br />
+              <i class="navicon bi-send-fill"></i><br />
               <span class="d-none d-sm-inline-block"> CONTANCT </span>
             </a>
           </li>
@@ -49,23 +57,23 @@
       </nav>
     </header>
     <div class="z-0 col-sm-10">
-      <main class="ff-poppins">
+      <main class="poppins-medium">
         <section id="hero" class="p-5 text-white">
           <!-- Hero -->
           <div class="h-100 d-flex">
             <div class="z-2 position-absolute align-self-center">
-              <div class="ff-oswald">
-                <h2 class="cfs-2">Honest</h2>
-                <h2 class="cfs-2">Prepared</h2>
-                <h2 class="cfs-2">Hard Work</h2>
+              <div class="oswald">
+                <h2 class="display-3 fw-semibold">Honest</h2>
+                <h2 class="display-3 fw-semibold">Prepared</h2>
+                <h2 class="display-3 fw-semibold">Hard Work</h2>
               </div>
             </div>
             <div class="z-2 position-absolute align-self-end">
-              <div class="ff-oswald">
-                <h1 class="m-0 cfs-2">Yusuf Dwi Putra</h1>
-                <h4 class="cfs-3">
+              <div class="oswald">
+                <h1 class="m-0 display-1 fw-semibold">Yusuf Dwi Putra</h1>
+                <p class="m-0 h1">
                   <small>Front End Devoloper & 3D Model</small>
-                </h4>
+                </p>
               </div>
             </div>
           </div>
@@ -132,11 +140,7 @@
           </div>
           <!-- End edu-exp-ski -->
         </section>
-        <section
-          id="portfolio"
-          class="text-center p-5 position-relative"
-          style="background-color: #c7fff3"
-        >
+        <section id="portfolio" class="text-center p-5 position-relative">
           <!-- portfolio -->
           <h2>My Porftfolio</h2>
           <div class="row mt-3 glass py-3">
@@ -147,8 +151,17 @@
                   <a href="">
                     <img
                       src="./Asset/portfolio/logoMultiplant.webp"
-                      alt="Multiplant Website"
-                      class="weblogo"
+                      alt="Website Website"
+                      class="weblogo rounded-3 d-none"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://labuf.id/" target="_blank">
+                    <img
+                      src="./Asset/portfolio/Labuf.id.webp"
+                      alt="Website Labuf"
+                      class="weblogo rounded-3"
                     />
                   </a>
                 </li>
@@ -163,21 +176,21 @@
                     href="https://www.instagram.com/p/Cat9rLbhpo-/?img_index=1"
                   >
                     <img
-                      src="./Asset/portfolio/Pupuk MultiPlant Plus.png"
+                      src="./Asset/portfolio/Pupuk MultiPlant Plus.webp"
                       alt="Jerry Can MultiPlant Plus Fertilizer"
-                      class="img-fluid"
+                      class="img-fluid rounded-3"
                     />
                   </a>
                 </li>
                 <li class="modelimg">
                   <a
                     target="_blank"
-                    href="https://www.instagram.com/p/CbzZcmprEXh/"
+                    href="https://www.youtube.com/watch?v=E_2tYlK8-qk"
                   >
                     <img
-                      src="./Asset/portfolio/EXploded Neptunia Camera Lens.png"
+                      src="./Asset/portfolio/EXploded Neptunia Camera Lens.webp"
                       alt="Phone Animation"
-                      class="img-fluid"
+                      class="img-fluid rounded-3"
                     />
                   </a>
                 </li>
@@ -187,9 +200,9 @@
                     href="https://www.instagram.com/p/CwaCEOXS8YQ/"
                   >
                     <img
-                      src="./Asset/portfolio/Blender Bros Free Course Composited.png"
+                      src="./Asset/portfolio/Blender Bros Free Course Composited.webp"
                       alt="Robotic Arm"
-                      class="img-fluid"
+                      class="img-fluid rounded-3"
                     />
                   </a>
                 </li>
@@ -202,10 +215,12 @@
               see more
             </div>
           </div>
-          <div class="portfolio-option p-5 ff-oswald d-none">
-            <div class="h-100 row align-items-center">
+          <div class="portfolio-option p-5 d-none">
+            <div class="h-100 row align-items-center poppins-medium">
               <div class="col-12 align-self-start">
-                <h2>WHICH DO YOU WANT TO SEE?</h2>
+                <h2 class="poppins-bold text-dark">
+                  WHICH DO YOU WANT TO SEE?
+                </h2>
               </div>
               <div class="col 6">
                 <a
@@ -228,7 +243,9 @@
                 </a>
               </div>
               <div class="col-12 align-self-end">
-                <button class="close-portfolio w-100 btn btn-info text-white">
+                <button
+                  class="close-portfolio w-100 btn btn-info text-white poppins-semibold"
+                >
                   CLOSE
                 </button>
               </div>
@@ -244,7 +261,7 @@
               <div class="carousel-item active">
                 <img
                   class="awardimgsize"
-                  src="./Asset/certificate/Udemy Course Completion Certificate Blender Character Creator For Game Design.jpg"
+                  src="./Asset/certificate/Udemy Course Completion Certificate Blender Character Creator For Game Design.webp"
                   alt="Udemy Blender Certificate"
                   height="550"
                 />
@@ -252,15 +269,15 @@
               <div class="carousel-item">
                 <img
                   class="awardimgsize"
-                  src="./Asset/certificate/Sertifikat Ketik Yusuf.jpg"
+                  src="./Asset/certificate/Sertifikat Ketik Yusuf.webp"
                   alt="Typing Certificate"
                   height="550"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  class="awardimgsize"
-                  src="./Asset/certificate/Sertifikat Zuper.jpg"
+                  class="awardimgsize awardimgrotate"
+                  src="./Asset/certificate/Sertifikat Zuper.webp"
                   alt="Zuper Certificate"
                   height="550"
                 />
@@ -268,15 +285,15 @@
               <div class="carousel-item">
                 <img
                   class="awardimgsize"
-                  src="./Asset/certificate/Sertifikat Jurusan.jpg"
+                  src="./Asset/certificate//Sertifikat Jurusan.webp"
                   alt="Major Certificate"
                   height="550"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  class="awardimgsize"
-                  src="./Asset/certificate/Depan Kursus Sekolah LKP.jpg"
+                  class="awardimgsize awardimgrotate"
+                  src="./Asset/certificate/Depan Kursus Sekolah LKP.webp"
                   alt="LKP Certificate"
                   height="550"
                 />
@@ -321,16 +338,16 @@
               collaborations, and interesting conversations.
               <form name="cv-contact-form" class="mt-3">
                 <div class="input-group">
-                  <input type="text" name="name" required />
-                  <label>Name</label>
+                  <input type="text" name="name" id="name" required />
+                  <label for="name">Name</label>
                 </div>
                 <div class="input-group">
-                  <input type="email" name="email" required />
-                  <label>Email</label>
+                  <input type="email" name="email" id="email" required />
+                  <label for="email">Email</label>
                 </div>
                 <div class="input-group">
-                  <textarea name="message" required></textarea>
-                  <label>How can we help?</label>
+                  <textarea name="message" id="message" required></textarea>
+                  <label for="message">How can we help?</label>
                 </div>
                 <button
                   type="submit"
@@ -417,6 +434,10 @@
       </footer>
     </div>
     <script src="./JS/javascript.js"></script>
-    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
